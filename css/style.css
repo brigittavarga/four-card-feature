@@ -2,6 +2,8 @@
 ::after,
 ::before {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -10,11 +12,15 @@ body {
   min-height: 100vh;
   padding-top: 45px;
 }
-
 @media (max-width: 768px) {
   body {
     padding: 30px;
   }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 main {
@@ -23,40 +29,33 @@ main {
   margin-right: auto;
   text-align: center;
 }
-
 main h1 {
   text-align: center;
   font-size: 2.5em;
   font-weight: 200;
   color: #4c4e61;
 }
-
 main h1 span {
   display: block;
   font-weight: bold;
 }
-
 main p {
   max-width: calc(1440px / 2);
   margin-left: auto;
   margin-right: auto;
   color: #a3a5ae;
 }
-
 main .article-container article:nth-child(1) {
   transform: translateY(50%);
   border-top-color: #45d3d3;
 }
-
 main .article-container article:nth-child(3) {
   transform: translateY(50%);
   border-top-color: #549ef2;
 }
-
 main .article-container article:nth-child(4) {
   border-top-color: #fcaf4a;
 }
-
 @media (max-width: 768px) {
   main .article-container article:nth-child(1) {
     transform: translateY(0%);
@@ -65,7 +64,6 @@ main .article-container article:nth-child(4) {
     transform: translateY(0%);
   }
 }
-
 main article {
   width: 25%;
   height: 250px;
@@ -81,7 +79,6 @@ main article {
   box-shadow: 0px 10px 20px rgba(163, 165, 174, 0.3);
   margin: 15px;
 }
-
 @media (max-width: 768px) {
   main article {
     margin: 0;
@@ -89,15 +86,27 @@ main article {
     width: 100%;
   }
 }
-
 main article h2 {
   color: #4c4e61;
   margin-bottom: 5px;
 }
-
 main article img {
   position: absolute;
   bottom: 15px;
   right: 15px;
 }
+
+footer {
+  margin-top: 50px;
+  background-color: #a3a5ae;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
